@@ -1,12 +1,10 @@
-FROM microsoft/dotnet:2.2-sdk  AS build-env
+FROM microsoft/dotnet:2.2-sdk AS build-env
 WORKDIR /app
-
-
 
 COPY *.csproj ./
 RUN dotnet restore
 
-COPY ../
+COPY . ./
 RUN dotnet publish -c Release -o out
 
 FROM microsoft/dotnet:2.2-aspnetcore-runtime
