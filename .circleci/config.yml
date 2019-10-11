@@ -15,4 +15,4 @@ jobs:
          docker tag aspnetapp registry.heroku.com/dotnetcore-demos/web
          docker push registry.heroku.com/dotnetcore-demos/web                
          curl https://cli-assets.heroku.com/install.sh | sh
-         heroku container:release web -a $dotnetcore-demos
+         heroku container:release web -a dotnetcore-demos
