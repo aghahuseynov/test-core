@@ -1,0 +1,24 @@
+{
+  "name": "AntDesign",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.23.6",
+    "axios": "^0.19.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.5"
+  },
+  "devDependencies": {},
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src/"
+  }
+}
